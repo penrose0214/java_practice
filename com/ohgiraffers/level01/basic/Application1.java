@@ -17,7 +17,7 @@ public class Application1 {
         int Add = a + b;
         int Sub = a - b;
         int Mul = a * b;
-        double Div = (a / b);
+        double Div = a / b ;
 
         System.out.println("Add = " + Add);
         System.out.println("Sub = " + Sub);
