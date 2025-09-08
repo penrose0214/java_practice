@@ -1,7 +1,7 @@
-package com.ohgiraffers.practice.polymorphism;
+package com.ohgiraffers.practice.polymorphism01;
 
 public class Animal {
-    public void cry(){
+    private void cry(){
         System.out.println("동물이 울음소리를 냅니다");
     }
 }
