@@ -28,5 +28,14 @@ public class Main {
         for (int i = 0; i < carArray.length; i++) {
             carArray[i].driveMaxSpeed();
         }
+
+        System.out.println(" ");
+
+        // 가변인자 테스트
+        ParameterTest parameter = new ParameterTest();
+        parameter.testVariableLengthParameter();
+        parameter.testVariableLengthParameter("coding");
+        parameter.testVariableLengthParameter("coding", "baseball");
+        parameter.testVariableLengthParameter(new String[] {"coding", "baseball"});
     }
 }
