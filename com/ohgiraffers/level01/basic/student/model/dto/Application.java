@@ -18,8 +18,11 @@ public class Application {
             System.out.println("학년 :" );
             student[count].grade = input.nextInt();
 
+            System.out.println("반 : ");
+            student[count].name = input.next();
+
             System.out.println("이름 :");
-            student[count].name = input.nextLine();
+            student[count].name = input.next();
 
             System.out.println("국어 점수 : ");
             student[count].kor = input.nextInt();
@@ -43,7 +46,7 @@ public class Application {
         // 현재 기록된 학생들의 각각의 점수 평균을 구함
         for (StudentDTO stud : student) {
             average = ((double)stud.kor + (double)stud.eng + (double)stud.math) / 3;
-            System.out.println(stud.getInformation() + "평균=" + average);
+            System.out.println(stud.getInformation() + " 평균=" + average);
         }
     }
 }

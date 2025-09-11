@@ -14,7 +14,7 @@ public class StudentDTO {
 
     public String getInformation(){
 
-        return ("학년=" + grade + "반=" + classroom + "이름=" + name
-                        + "국어=" + kor + "영어=" + eng + "수학=" + math);
+        return ("학년=" + grade + " 반=" + classroom + " 이름=" + name
+                        + " 국어=" + kor + " 영어=" + eng + " 수학=" + math);
     }
 }
