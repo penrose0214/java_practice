@@ -44,7 +44,7 @@ public class Application {
         }
 
         // 현재 기록된 학생들의 각각의 점수 평균을 구함
-        for (int i = 0; i < student.length; i++) {
+        for (int i = 0; i < count; i++) {
             average = ((double)student[i].kor + (double)student[i].eng + (double)student[i].math) / 3;
             System.out.println(student[i].getInformation() + " 평균=" + average);
         }
