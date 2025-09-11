@@ -44,8 +44,11 @@ public class Application {
         }
 
         // 현재 기록된 학생들의 각각의 점수 평균을 구함
+        // enhanced for문을 사용해서 순환을 한다면 (별다른 조치를 취하지 않았을때) 자동으로 null 값을 읽어서 null point exception 발생
+        // 자바 enhanced for 문에서는 null point exception이 발생하지 않게 하기 위한 조치를 따로 정해줘야 한다.
         for (int i = 0; i < count; i++) {
-            average = ((double)student[i].kor + (double)student[i].eng + (double)student[i].math) / 3;
+            // 하나만 타입을 자동 변환해주면 다른 값들도 자동으로 값을 변환해줌
+            average = ((double)student[i].kor + student[i].eng + student[i].math) / 3;
             System.out.println(student[i].getInformation() + " 평균=" + average);
         }
     }
