@@ -18,7 +18,6 @@ public class Product {
         System.out.println("static 블럭 동작");
     }
 
-
     public String getInformation(){
         return this.name + " " + this.price + " " + Product.brand;
     }
